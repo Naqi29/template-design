@@ -1,0 +1,6 @@
+@mixin font-styles($weight, $size, $space) {
+    font-family: 'Poppins', sans-serif;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $space;
+}

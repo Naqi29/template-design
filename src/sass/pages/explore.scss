@@ -1,0 +1,171 @@
+@import 'variables';
+@import 'mixins';
+
+
+
+// Hero
+.hero-explore {
+    background-repeat: no-repeat;
+    background-position: right (-80px) bottom;
+    height: 673px;
+
+    .right {
+        margin-top: 239px;
+
+        h1 {
+            @include font-styles(600, 96px, 144px);
+            background: -webkit-linear-gradient(-225.99deg, #FF9F43 33.36%, #F8FBFF 62.7%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            margin-top: -25px;
+            @include font-styles(400, 24px, 36px);
+            color: $c-one;
+        }
+    }
+
+    .left {
+        margin-top: 205px;
+
+        h1 {
+            @include font-styles(400, 36px, 54px);
+            color: $c-one;
+            padding-bottom: 10px;
+        }
+
+        h1 span {
+            font-weight: 600;
+            color: $c-three;
+        }
+
+        p {
+            @include font-styles(400, 18px, 27px);
+            color: $c-one;
+            padding-bottom: 30px;
+        }
+
+        form button {
+            border-radius: 10px 0 0 10px;
+        }
+
+        form input {
+            border-radius: 0 10px 10px 0;
+            @include font-styles(400, 18px, 27px);
+            color: $c-two;
+            padding: 7px;
+        }
+    }
+}
+
+
+// Product
+.product-explore {
+    background-color: $c-one;
+
+    h2 {
+        margin-top: 80px;
+        @include font-styles(400, 28px, 42px);
+        color: $c-two;
+        margin-bottom: 42px;
+    }
+
+    .card {
+        background-color: $c-one;
+
+        .category {
+            @include font-styles(300, 12px, 18px);
+            color: $c-five;
+            margin-bottom: 5px;
+        }
+
+        .card-title {
+            @include font-styles(400, 18px, 27px);
+            color: $c-two;
+            margin-bottom: 5px;
+        }
+
+        .price {
+            @include font-styles(400, 14px, 21px);
+            color: $c-four;
+            margin-bottom: 40px;
+        }
+    }
+
+    .pagination .page-item {
+        padding-right: 10px;
+        margin-top: -10px;
+        margin-bottom: 84px;
+    }
+
+    .pagination .page-link {
+        border-radius: $default-radius;
+        @include font-styles(400, 14px, 27px);
+        color: $c-two;
+        background-color: $c-one;
+    }
+
+    .pagination .page-link:focus {
+        color: $c-four;
+        background-color: $c-one;
+    }
+}
+
+// single breakpoint
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    // Hero
+    .hero-explore {
+        background-size: 530px;
+        background-position: right (-103px) bottom;
+        margin-top: -90px;
+    }
+}
+
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+
+    // Hero
+    .hero-explore {
+        background-size: 362px;
+        background-position: right (-103px) bottom (-53px);
+
+        .right {
+            margin-top: 86px;
+
+            h1 {
+                @include font-styles(600, 62px, 94px);
+            }
+
+            p {
+                @include font-styles(400, 18px, 27px);
+            }
+        }
+
+        .left {
+            margin-top: 63px;
+
+            h1 {
+                @include font-styles(400, 24px, 36px);
+            }
+
+            p {
+                @include font-styles(400, 14px, 21px);
+            }
+        }
+    }
+
+    // Product
+    .product-explore {
+        h2 {
+            margin-top: 38px;
+            @include font-styles(400, 18px, 27px);
+            text-align: center;
+        }
+
+        .pagination .page-item {
+            margin-bottom: 30px;
+        }
+    }
+}

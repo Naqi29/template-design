@@ -1,0 +1,45 @@
+@import '../pages/variables';
+@import '../pages/mixins';
+
+
+
+// Hero
+.hero {
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 392px;
+
+    h1 {
+        margin-top: 100px;
+        @include font-styles(400, 36px, 54px);
+        color: $c-one;
+        margin-bottom: 20px;
+    }
+
+    h1 span {
+        font-weight: 600;
+        color: $c-three;
+    }
+
+    p {
+        @include font-styles(400, 18px, 27px);
+        color: $c-one;
+    }
+}
+
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+
+    // hero
+    .hero {
+
+        h1 {
+            @include font-styles(400, 24px, 36px);
+            margin-bottom: 15px;
+        }
+
+        p {
+            @include font-styles(400, 14px, 21px);
+        }
+    }
+}

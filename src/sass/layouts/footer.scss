@@ -1,0 +1,30 @@
+@import '../pages/variables';
+@import '../pages/mixins';
+
+
+
+// Footer
+.footer {
+    @include font-styles(300, 18px, 27px);
+    color: $c-one;
+    margin-top: 80px;
+    margin-bottom: 80px;
+
+    p span {
+        font-weight: 500;
+    }
+
+    ul li {
+        background-color: $c-two;
+        @include font-styles(300, 18px, 27px);
+
+        a {
+            text-decoration: none;
+            color: $c-one;
+        }
+
+        a:hover {
+            color: $c-three;
+        }
+    }
+}

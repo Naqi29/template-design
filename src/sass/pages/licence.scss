@@ -1,0 +1,68 @@
+@import 'variables';
+@import 'mixins';
+
+
+
+// Content
+.content-licence {
+    background-color: $c-one;
+    padding-top: 75px;
+    padding-bottom: 144px;
+
+    ul {
+        @include font-styles(500, 14px, 21px);
+        border-radius: $default-radius;
+
+        li {
+            color: $c-two;
+            background-color: $c-one;
+            border-radius: $default-radius;
+        }
+
+        .main {
+            color: $c-one;
+            background-color: $c-two;
+        }
+    }
+
+    .card {
+        background-color: $c-two;
+        border-radius: $default-radius;
+
+        img {
+            margin-top: 35px;
+            width: 114px;
+            height: 114px;
+        }
+
+        h5 {
+            @include font-styles(500, 14px, 21px);
+            color: $c-one;
+            margin-bottom: 9px;
+        }
+
+        p {
+            @include font-styles(400, 12px, 18px);
+            color: $c-five;
+            margin-bottom: 15px;
+        }
+    }
+
+    .description {
+        @include font-styles(500, 14px, 21px);
+        color: $c-two;
+    }
+}
+
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+
+    // Content
+    .content-licence {
+
+        .card {
+            margin-top: 35px;
+            margin-bottom: 62px;
+        }
+    }
+}
