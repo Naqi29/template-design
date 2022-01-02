@@ -145,6 +145,7 @@ body {
 }
 .product-explore .card {
   background-color: #F8FBFF;
+  margin-bottom: 40px;
 }
 .product-explore .card .category {
   font-family: "Poppins", sans-serif;
@@ -168,7 +169,6 @@ body {
   font-size: 14px;
   line-height: 21px;
   color: #1E69E3;
-  margin-bottom: 40px;
 }
 .product-explore .pagination .page-item {
   padding-right: 10px;
@@ -333,10 +333,10 @@ body {
   color: #222F3E;
   margin-bottom: 29px;
 }
-.content-product-detail .right .btn-up {
+.content-product-detail .right .btn-buy {
   margin-bottom: 13px;
 }
-.content-product-detail .right .btn-up button {
+.content-product-detail .right .btn-buy a {
   background-color: #222F3E;
   border-radius: 10px;
   width: 100%;
@@ -347,7 +347,7 @@ body {
   line-height: 21px;
   color: #F8FBFF;
 }
-.content-product-detail .right .btn-down a {
+.content-product-detail .right .btn-preview a {
   border: 1px solid #808080;
   background-color: #F8FBFF;
   border-radius: 10px;
@@ -413,19 +413,17 @@ body {
   padding-top: 75px;
   padding-bottom: 144px;
 }
-.content-licence ul {
+.content-licence .nav button {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
   border-radius: 10px;
-}
-.content-licence ul li {
   color: #222F3E;
   background-color: #F8FBFF;
   border-radius: 10px;
 }
-.content-licence ul .main {
+.content-licence .nav .active {
   color: #F8FBFF;
   background-color: #222F3E;
 }
