@@ -6,7 +6,7 @@
 // Footer
 .footer {
     @include font-styles(300, 18px, 27px);
-    color: $c-one;
+    color: $color-light;
     margin-top: 80px;
     margin-bottom: 80px;
 
@@ -15,16 +15,16 @@
     }
 
     ul li {
-        background-color: $c-two;
+        background-color: $color-dark;
         @include font-styles(300, 18px, 27px);
 
         a {
             text-decoration: none;
-            color: $c-one;
+            color: $color-light;
         }
 
         a:hover {
-            color: $c-three;
+            color: $color-orange;
         }
     }
 }

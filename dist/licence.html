@@ -58,11 +58,11 @@
       <div class="container px-4 px-md-0">
         <div class="row justify-content-center justify-content-md-evenly"> 
           <div class="col-8 col-md-4 col-lg-3">
-            <ul class="list-group mb-5">
-              <li class="list-group-item main border-0 py-3 ps-4">General Information</li>
-              <li class="list-group-item border-0 pt-4 pb-3 ps-4">Standard Licences</li>
-              <li class="list-group-item border-0 py-3 ps-4">Enterprise Licences</li>
-            </ul>
+            <div class="nav nav-pills flex-column mb-5" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <button class="nav-link text-start mt-2 py-3 ps-4 active" id="v-pills-general-information-tab" data-bs-toggle="pill" data-bs-target="#v-pills-general-information" type="button" role="tab" aria-controls="v-pills-general-information" aria-selected="true">General Information</button>
+              <button class="nav-link text-start mt-2 py-3 ps-4" id="v-pills-standard-licences-tab" data-bs-toggle="pill" data-bs-target="#v-pills-standard-licences" type="button" role="tab" aria-controls="v-pills-standard-licences" aria-selected="false">Standard Licences</button>
+              <button class="nav-link text-start mt-2 py-3 ps-4" id="v-pills-enterprise-licences-tab" data-bs-toggle="pill" data-bs-target="#v-pills-enterprise-licences" type="button" role="tab" aria-controls="v-pills-enterprise-licences" aria-selected="false">Enterprise Licences</button>
+            </div>
             <div class="card text-center">
               <img src="img/licence/reminder.png" class="card-img-top rounded-circle mx-auto" alt="Reminder">
               <div class="card-body">
@@ -72,11 +72,29 @@
             </div> 
           </div>
           <div class="col-md-7 col-lg-6 description">
-            <p>For solo freelancers creating a website for a single client <br>If you are a freelancer creating one website for a single client, and the website you're creating can be accessed by the end user (in this case, visitors to your client's website) free of charge, then the Freelancer License is all you need if you only want the HTML/CSS version of the theme. The Developer License is required if you want the full source files for the theme.</p>
-            <p>If users have to pay to access certain features or areas of the website you are creating for your client, like a SaaS application, then the Startup License is needed</p>
-            <p>Note: a typical e commerce website requires users to pay for products on the website, but not to use the website in this case a Freelancer or Developer License is sufficient</p>
-            <p>For agencies and small teams creating a website for a single client <br>If you are an agency or a small team of 5 team members or less creating one website for a single client, Startup License is required</p>
-            <p>With the Startup License, the application you are building for a client is allowed to have paying users, for example, a SaaS application</p>
+            <div class="tab-content" id="v-pills-tabContent">
+              <div class="tab-pane fade show active" id="v-pills-general-information" role="tabpanel" aria-labelledby="v-pills-general-information-tab">
+                <p>For solo freelancers creating a website for a single client <br>If you are a freelancer creating one website for a single client, and the website you're creating can be accessed by the end user (in this case, visitors to your client's website) free of charge, then the Freelancer License is all you need if you only want the HTML/CSS version of the theme. The Developer License is required if you want the full source files for the theme.</p>
+                <p>If users have to pay to access certain features or areas of the website you are creating for your client, like a SaaS application, then the Startup License is needed</p>
+                <p>Note: a typical e commerce website requires users to pay for products on the website, but not to use the website in this case a Freelancer or Developer License is sufficient</p>
+                <p>For agencies and small teams creating a website for a single client <br>If you are an agency or a small team of 5 team members or less creating one website for a single client, Startup License is required</p>
+                <p>With the Startup License, the application you are building for a client is allowed to have paying users, for example, a SaaS application</p>
+              </div>
+              <div class="tab-pane fade" id="v-pills-standard-licences" role="tabpanel" aria-labelledby="v-pills-standard-licences-tab">
+                <p>For solo freelancers creating a website for a single client <br>If you are a freelancer creating one website for a single client, and the website you're creating can be accessed by the end user (in this case, visitors to your client's website) free of charge, then the Freelancer License is all you need if you only want the HTML/CSS version of the theme. The Developer License is required if you want the full source files for the theme.</p>
+                <p>If users have to pay to access certain features or areas of the website you are creating for your client, like a SaaS application, then the Startup License is needed</p>
+                <p>Note: a typical e commerce website requires users to pay for products on the website, but not to use the website in this case a Freelancer or Developer License is sufficient</p>
+                <p>For agencies and small teams creating a website for a single client <br>If you are an agency or a small team of 5 team members or less creating one website for a single client, Startup License is required</p>
+                <p>With the Startup License, the application you are building for a client is allowed to have paying users, for example, a SaaS application</p>
+              </div>
+              <div class="tab-pane fade" id="v-pills-enterprise-licences" role="tabpanel" aria-labelledby="v-pills-enterprise-licences-tab">
+                <p>For solo freelancers creating a website for a single client <br>If you are a freelancer creating one website for a single client, and the website you're creating can be accessed by the end user (in this case, visitors to your client's website) free of charge, then the Freelancer License is all you need if you only want the HTML/CSS version of the theme. The Developer License is required if you want the full source files for the theme.</p>
+                <p>If users have to pay to access certain features or areas of the website you are creating for your client, like a SaaS application, then the Startup License is needed</p>
+                <p>Note: a typical e commerce website requires users to pay for products on the website, but not to use the website in this case a Freelancer or Developer License is sufficient</p>
+                <p>For agencies and small teams creating a website for a single client <br>If you are an agency or a small team of 5 team members or less creating one website for a single client, Startup License is required</p>
+                <p>With the Startup License, the application you are building for a client is allowed to have paying users, for example, a SaaS application</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

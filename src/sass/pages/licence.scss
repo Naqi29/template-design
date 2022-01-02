@@ -5,28 +5,28 @@
 
 // Content
 .content-licence {
-    background-color: $c-one;
+    background-color: $color-light;
     padding-top: 75px;
     padding-bottom: 144px;
 
-    ul {
-        @include font-styles(500, 14px, 21px);
-        border-radius: $default-radius;
+    .nav {
 
-        li {
-            color: $c-two;
-            background-color: $c-one;
-            border-radius: $default-radius;
+        button {
+            @include font-styles(500, 14px, 21px);
+            border-radius: 10px;
+            color: $color-dark;
+            background-color: $color-light;
+            border-radius: 10px;
         }
 
-        .main {
-            color: $c-one;
-            background-color: $c-two;
+        .active {
+            color: $color-light;
+            background-color: $color-dark;
         }
     }
 
     .card {
-        background-color: $c-two;
+        background-color: $color-dark;
         border-radius: $default-radius;
 
         img {
@@ -37,20 +37,20 @@
 
         h5 {
             @include font-styles(500, 14px, 21px);
-            color: $c-one;
+            color: $color-light;
             margin-bottom: 9px;
         }
 
         p {
             @include font-styles(400, 12px, 18px);
-            color: $c-five;
+            color: $color-gray;
             margin-bottom: 15px;
         }
     }
 
     .description {
         @include font-styles(500, 14px, 21px);
-        color: $c-two;
+        color: $color-dark;
     }
 }
 

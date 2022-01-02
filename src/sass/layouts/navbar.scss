@@ -8,17 +8,17 @@
 
     .navbar-brand {
         @include font-styles(600, 24px, 27px);
-        color: $c-one !important;
+        color: $color-light !important;
     }
 
     .nav-link {
         @include font-styles(400, 18px, 27px);
-        color: $c-one !important;
+        color: $color-light !important;
     }
 
     .active-link {
         @include font-styles(600, 18px, 27px);
-        color: $c-three !important;
+        color: $color-orange !important;
     }
 }
 

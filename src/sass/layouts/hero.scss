@@ -12,18 +12,18 @@
     h1 {
         margin-top: 100px;
         @include font-styles(400, 36px, 54px);
-        color: $c-one;
+        color: $color-light;
         margin-bottom: 20px;
     }
 
     h1 span {
         font-weight: 600;
-        color: $c-three;
+        color: $color-orange;
     }
 
     p {
         @include font-styles(400, 18px, 27px);
-        color: $c-one;
+        color: $color-light;
     }
 }
 
