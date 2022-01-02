@@ -14,7 +14,7 @@
 
         h1 {
             @include font-styles(600, 96px, 144px);
-            background: -webkit-linear-gradient(-225.99deg, #FF9F43 33.36%, #F8FBFF 62.7%);
+            background: -webkit-linear-gradient(-225.99deg, $color-orange 33.36%, $color-light 62.7%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -22,7 +22,7 @@
         p {
             margin-top: -25px;
             @include font-styles(400, 24px, 36px);
-            color: $c-one;
+            color: $color-light;
         }
     }
 
@@ -31,18 +31,18 @@
 
         h1 {
             @include font-styles(400, 36px, 54px);
-            color: $c-one;
+            color: $color-light;
             padding-bottom: 10px;
         }
 
         h1 span {
             font-weight: 600;
-            color: $c-three;
+            color: $color-orange;
         }
 
         p {
             @include font-styles(400, 18px, 27px);
-            color: $c-one;
+            color: $color-light;
             padding-bottom: 30px;
         }
 
@@ -53,7 +53,7 @@
         form input {
             border-radius: 0 10px 10px 0;
             @include font-styles(400, 18px, 27px);
-            color: $c-two;
+            color: $color-dark;
             padding: 7px;
         }
     }
@@ -62,33 +62,33 @@
 
 // Product
 .product-explore {
-    background-color: $c-one;
+    background-color: $color-light;
 
     h2 {
         margin-top: 80px;
         @include font-styles(400, 28px, 42px);
-        color: $c-two;
+        color: $color-dark;
         margin-bottom: 42px;
     }
 
     .card {
-        background-color: $c-one;
+        background-color: $color-light;
 
         .category {
             @include font-styles(300, 12px, 18px);
-            color: $c-five;
+            color: $color-gray;
             margin-bottom: 5px;
         }
 
         .card-title {
             @include font-styles(400, 18px, 27px);
-            color: $c-two;
+            color: $color-dark;
             margin-bottom: 5px;
         }
 
         .price {
             @include font-styles(400, 14px, 21px);
-            color: $c-four;
+            color: $color-blue;
             margin-bottom: 40px;
         }
     }
@@ -102,13 +102,13 @@
     .pagination .page-link {
         border-radius: $default-radius;
         @include font-styles(400, 14px, 27px);
-        color: $c-two;
-        background-color: $c-one;
+        color: $color-dark;
+        background-color: $color-light;
     }
 
     .pagination .page-link:focus {
-        color: $c-four;
-        background-color: $c-one;
+        color: $color-blue;
+        background-color: $color-light;
     }
 }
 
