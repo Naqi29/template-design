@@ -1,8 +1,3 @@
-@import 'variables';
-@import 'mixins';
-
-
-
 // Hero
 .hero-explore {
     background-repeat: no-repeat;
@@ -14,7 +9,11 @@
 
         h1 {
             @include font-styles(600, 96px, 144px);
-            background: -webkit-linear-gradient(-225.99deg, $color-orange 33.36%, $color-light 62.7%);
+            background: -webkit-linear-gradient(
+                -225.99deg,
+                $color-orange 33.36%,
+                $color-light 62.7%
+            );
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -58,7 +57,6 @@
         }
     }
 }
-
 
 // Product
 .product-explore {
@@ -114,7 +112,6 @@
 
 // single breakpoint
 @media (min-width: 768px) and (max-width: 991.98px) {
-
     // Hero
     .hero-explore {
         background-size: 530px;
@@ -125,7 +122,6 @@
 
 // `md` applies to small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
-
     // Hero
     .hero-explore {
         background-size: 362px;

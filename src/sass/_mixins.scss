@@ -1,0 +1,32 @@
+// * 640px, 1024px, 1400px
+$breakpoints-up: (
+    'md': '40em',
+    'lg': '64em',
+    'xl': '87.5em',
+);
+
+//  * 639px, 1023px, 1399px
+$breakpoints-down: (
+    'sm': '39.9375em',
+    'md': '64em',
+    'lg': '87.4375em',
+);
+
+@mixin font-styles($weight, $size, $space) {
+    font-family: 'Poppins', sans-serif;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $space;
+}
+
+@mixin breakpoint-up($size) {
+    @media (min-width: map-get($breakpoints-up, $size)) {
+        @content;
+    }
+}
+
+@mixin breakpoint-down($size) {
+    @media (max-width: map-get($breakpoints-down, $size)) {
+        @content;
+    }
+}

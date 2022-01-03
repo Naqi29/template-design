@@ -1,11 +1,16 @@
-@import 'pages/globals';
+// Globals
+@import 'variables';
+@import 'mixins';
+@import 'globals';
 
+// Layouts
 @import 'layouts/navbar';
+@import 'layouts/footer';
 
-@import 'layouts/hero';
+// Components
+@import 'components/hero';
 
+// Pages
 @import 'pages/explore';
 @import 'pages/product-detail';
 @import 'pages/licence';
-
-@import 'layouts/footer';

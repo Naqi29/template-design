@@ -1,5 +1,5 @@
 body {
-  background-color: #222F3E;
+  background-color: #222f3e;
 }
 
 .navbar .navbar-brand {
@@ -7,21 +7,21 @@ body {
   font-weight: 600;
   font-size: 24px;
   line-height: 27px;
-  color: #F8FBFF !important;
+  color: #f8fbff !important;
 }
 .navbar .nav-link {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
-  color: #F8FBFF !important;
+  color: #f8fbff !important;
 }
 .navbar .active-link {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 18px;
   line-height: 27px;
-  color: #FF9F43 !important;
+  color: #ff9f43 !important;
 }
 
 @media (max-width: 767.98px) {
@@ -29,6 +29,33 @@ body {
     text-align: center;
   }
 }
+.footer {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+  color: #f8fbff;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.footer p span {
+  font-weight: 500;
+}
+.footer ul li {
+  background-color: #222f3e;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+}
+.footer ul li a {
+  text-decoration: none;
+  color: #f8fbff;
+}
+.footer ul li a:hover {
+  color: #ff9f43;
+}
+
 .hero {
   background-repeat: no-repeat;
   background-position: center;
@@ -40,19 +67,19 @@ body {
   font-weight: 400;
   font-size: 36px;
   line-height: 54px;
-  color: #F8FBFF;
+  color: #f8fbff;
   margin-bottom: 20px;
 }
 .hero h1 span {
   font-weight: 600;
-  color: #FF9F43;
+  color: #ff9f43;
 }
 .hero p {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
-  color: #F8FBFF;
+  color: #f8fbff;
 }
 
 @media (max-width: 767.98px) {
@@ -83,7 +110,7 @@ body {
   font-weight: 600;
   font-size: 96px;
   line-height: 144px;
-  background: -webkit-linear-gradient(-225.99deg, #FF9F43 33.36%, #F8FBFF 62.7%);
+  background: -webkit-linear-gradient(-225.99deg, #ff9f43 33.36%, #f8fbff 62.7%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -93,7 +120,7 @@ body {
   font-weight: 400;
   font-size: 24px;
   line-height: 36px;
-  color: #F8FBFF;
+  color: #f8fbff;
 }
 .hero-explore .left {
   margin-top: 205px;
@@ -103,19 +130,19 @@ body {
   font-weight: 400;
   font-size: 36px;
   line-height: 54px;
-  color: #F8FBFF;
+  color: #f8fbff;
   padding-bottom: 10px;
 }
 .hero-explore .left h1 span {
   font-weight: 600;
-  color: #FF9F43;
+  color: #ff9f43;
 }
 .hero-explore .left p {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
-  color: #F8FBFF;
+  color: #f8fbff;
   padding-bottom: 30px;
 }
 .hero-explore .left form button {
@@ -127,12 +154,12 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
-  color: #222F3E;
+  color: #222f3e;
   padding: 7px;
 }
 
 .product-explore {
-  background-color: #F8FBFF;
+  background-color: #f8fbff;
 }
 .product-explore h2 {
   margin-top: 80px;
@@ -140,11 +167,11 @@ body {
   font-weight: 400;
   font-size: 28px;
   line-height: 42px;
-  color: #222F3E;
+  color: #222f3e;
   margin-bottom: 42px;
 }
 .product-explore .card {
-  background-color: #F8FBFF;
+  background-color: #f8fbff;
   margin-bottom: 40px;
 }
 .product-explore .card .category {
@@ -160,7 +187,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
-  color: #222F3E;
+  color: #222f3e;
   margin-bottom: 5px;
 }
 .product-explore .card .price {
@@ -168,7 +195,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  color: #1E69E3;
+  color: #1e69e3;
 }
 .product-explore .pagination .page-item {
   padding-right: 10px;
@@ -181,12 +208,12 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 27px;
-  color: #222F3E;
-  background-color: #F8FBFF;
+  color: #222f3e;
+  background-color: #f8fbff;
 }
 .product-explore .pagination .page-link:focus {
-  color: #1E69E3;
-  background-color: #F8FBFF;
+  color: #1e69e3;
+  background-color: #f8fbff;
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -245,7 +272,7 @@ body {
   }
 }
 .content-product-detail {
-  background-color: #F8FBFF;
+  background-color: #f8fbff;
   padding-top: 75px;
   padding-bottom: 144px;
 }
@@ -295,9 +322,9 @@ body {
   padding: 15px;
   top: 0;
   right: 0;
-  background-color: #F8FBFF;
+  background-color: #f8fbff;
   border-radius: 0;
-  box-shadow: -2px 2px 2px #222F3E;
+  box-shadow: -2px 2px 2px #222f3e;
 }
 .content-product-detail .left #image .overlay img {
   padding: 35px;
@@ -315,14 +342,14 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
-  color: #222F3E;
+  color: #222f3e;
 }
 .content-product-detail .right h2 {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
-  color: #222F3E;
+  color: #222f3e;
   margin-bottom: 15px;
 }
 .content-product-detail .right p {
@@ -330,14 +357,14 @@ body {
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
-  color: #222F3E;
+  color: #222f3e;
   margin-bottom: 29px;
 }
 .content-product-detail .right .btn-buy {
   margin-bottom: 13px;
 }
 .content-product-detail .right .btn-buy a {
-  background-color: #222F3E;
+  background-color: #222f3e;
   border-radius: 10px;
   width: 100%;
   padding: 13px;
@@ -345,11 +372,11 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
-  color: #F8FBFF;
+  color: #f8fbff;
 }
 .content-product-detail .right .btn-preview a {
   border: 1px solid #808080;
-  background-color: #F8FBFF;
+  background-color: #f8fbff;
   border-radius: 10px;
   width: 100%;
   padding: 13px;
@@ -357,23 +384,23 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  color: #222F3E;
+  color: #222f3e;
 }
 .content-product-detail .right .card {
-  background-color: #222F3E;
+  background-color: #222f3e;
   border-radius: 10px;
   padding-top: 33px;
   padding-bottom: 20px;
   margin-top: 62px;
 }
 .content-product-detail .right .card table {
-  background-color: #222F3E;
+  background-color: #222f3e;
   border-radius: 10px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 12px;
   line-height: 18px;
-  color: #F8FBFF;
+  color: #f8fbff;
 }
 .content-product-detail .right .card table .thin {
   font-weight: 400;
@@ -387,7 +414,7 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
-  color: #F8FBFF;
+  color: #f8fbff;
   margin-bottom: 9px;
 }
 .content-product-detail .right .card p,
@@ -400,7 +427,7 @@ body {
   margin-bottom: 9px;
 }
 .content-product-detail .right .card a {
-  color: #F8FBFF;
+  color: #f8fbff;
 }
 
 @media (max-width: 767.98px) {
@@ -409,7 +436,7 @@ body {
   }
 }
 .content-licence {
-  background-color: #F8FBFF;
+  background-color: #f8fbff;
   padding-top: 75px;
   padding-bottom: 144px;
 }
@@ -419,16 +446,16 @@ body {
   font-size: 14px;
   line-height: 21px;
   border-radius: 10px;
-  color: #222F3E;
-  background-color: #F8FBFF;
+  color: #222f3e;
+  background-color: #f8fbff;
   border-radius: 10px;
 }
 .content-licence .nav .active {
-  color: #F8FBFF;
-  background-color: #222F3E;
+  color: #f8fbff;
+  background-color: #222f3e;
 }
 .content-licence .card {
-  background-color: #222F3E;
+  background-color: #222f3e;
   border-radius: 10px;
 }
 .content-licence .card img {
@@ -441,7 +468,7 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
-  color: #F8FBFF;
+  color: #f8fbff;
   margin-bottom: 9px;
 }
 .content-licence .card p {
@@ -457,7 +484,7 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
-  color: #222F3E;
+  color: #222f3e;
 }
 
 @media (max-width: 767.98px) {
@@ -465,30 +492,4 @@ body {
     margin-top: 35px;
     margin-bottom: 62px;
   }
-}
-.footer {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 27px;
-  color: #F8FBFF;
-  margin-top: 80px;
-  margin-bottom: 80px;
-}
-.footer p span {
-  font-weight: 500;
-}
-.footer ul li {
-  background-color: #222F3E;
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 27px;
-}
-.footer ul li a {
-  text-decoration: none;
-  color: #F8FBFF;
-}
-.footer ul li a:hover {
-  color: #FF9F43;
 }
