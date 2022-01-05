@@ -79,10 +79,15 @@
         ul {
             @include font-styles(500, 14px, 21px);
             color: $color-dark;
+
+            @include breakpoints-down(sm) {
+                margin-bottom: 80px;
+            }
         }
     }
 
     .right {
+
         h2 {
             @include font-styles(400, 18px, 27px);
             color: $color-dark;
@@ -109,6 +114,7 @@
         }
 
         .btn-preview {
+
             a {
                 border: 1px solid $color-gray;
                 background-color: $color-light;
@@ -158,18 +164,6 @@
 
             a {
                 color: $color-light;
-            }
-        }
-    }
-}
-
-// `md` applies to small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) {
-    // Content
-    .content-product-detail {
-        .left {
-            ul {
-                margin-bottom: 80px;
             }
         }
     }

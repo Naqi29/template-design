@@ -1,15 +1,12 @@
-// * 640px, 1024px, 1400px
-$breakpoints-up: (
-    'md': '40em',
-    'lg': '64em',
-    'xl': '87.5em',
+// Breakpoints
+$breakpoints-up: ('md': '768px',
+    'lg': '992px',
+    'xl': '1200px'
 );
 
-//  * 639px, 1023px, 1399px
-$breakpoints-down: (
-    'sm': '39.9375em',
-    'md': '64em',
-    'lg': '87.4375em',
+$breakpoints-down: ('sm': '767.98px',
+    'md': '991.98px',
+    'lg': '1199.98px'
 );
 
 @mixin font-styles($weight, $size, $space) {
@@ -19,14 +16,20 @@ $breakpoints-down: (
     line-height: $space;
 }
 
-@mixin breakpoint-up($size) {
-    @media (min-width: map-get($breakpoints-up, $size)) {
+@mixin breakpoints-up($width) {
+    @media (min-width: map-get($breakpoints-up, $width)) {
         @content;
     }
 }
 
-@mixin breakpoint-down($size) {
-    @media (max-width: map-get($breakpoints-down, $size)) {
+@mixin breakpoints-down($width) {
+    @media (max-width: map-get($breakpoints-down, $width)) {
+        @content;
+    }
+}
+
+@mixin breakpoints-between($min-width, $max-width) {
+    @media (min-width: map-get($breakpoints-up, $min-width)) and (max-width: map-get($breakpoints-down, $max-width)) {
         @content;
     }
 }
