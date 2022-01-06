@@ -8,6 +8,11 @@
         @include font-styles(400, 36px, 54px);
         color: $color-light;
         margin-bottom: 20px;
+
+        @include breakpoints-down(sm) {
+            @include font-styles(400, 24px, 36px);
+            margin-bottom: 15px;
+        }
     }
 
     h1 span {
@@ -18,19 +23,8 @@
     p {
         @include font-styles(400, 18px, 27px);
         color: $color-light;
-    }
-}
 
-// `md` applies to small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) {
-    // hero
-    .hero {
-        h1 {
-            @include font-styles(400, 24px, 36px);
-            margin-bottom: 15px;
-        }
-
-        p {
+        @include breakpoints-down(sm) {
             @include font-styles(400, 14px, 21px);
         }
     }

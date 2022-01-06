@@ -4,34 +4,61 @@
     background-position: right (-80px) bottom;
     height: 673px;
 
+    @include breakpoints-between(md, md) {
+        background-size: 530px;
+        background-position: right (-103px) bottom;
+        margin-top: -90px;
+    }
+
+    @include breakpoints-down(sm) {
+        background-size: 362px;
+        background-position: right (-103px) bottom (-53px);
+    }
+
     .right {
         margin-top: 239px;
 
+        @include breakpoints-down(sm) {
+            margin-top: 86px;
+        }
+
         h1 {
             @include font-styles(600, 96px, 144px);
-            background: -webkit-linear-gradient(
-                -225.99deg,
-                $color-orange 33.36%,
-                $color-light 62.7%
-            );
+            background: -webkit-linear-gradient(-225.99deg, $color-orange 33.36%, $color-light 62.7%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+
+            @include breakpoints-down(sm) {
+                @include font-styles(600, 62px, 94px);
+            }
         }
 
         p {
             margin-top: -25px;
             @include font-styles(400, 24px, 36px);
             color: $color-light;
+
+            @include breakpoints-down(sm) {
+                @include font-styles(400, 18px, 27px);
+            }
         }
     }
 
     .left {
         margin-top: 205px;
 
+        @include breakpoints-down(sm) {
+            margin-top: 63px;
+        }
+
         h1 {
             @include font-styles(400, 36px, 54px);
             color: $color-light;
             padding-bottom: 10px;
+
+            @include breakpoints-down(sm) {
+                @include font-styles(400, 24px, 36px);
+            }
         }
 
         h1 span {
@@ -43,20 +70,28 @@
             @include font-styles(400, 18px, 27px);
             color: $color-light;
             padding-bottom: 30px;
+
+            @include breakpoints-down(sm) {
+                @include font-styles(400, 14px, 21px);
+            }
         }
 
-        form button {
+        form label {
             border-radius: 10px 0 0 10px;
+            background-color: $color-light !important;
         }
 
         form input {
             border-radius: 0 10px 10px 0;
+            background-color: $color-light !important;
             @include font-styles(400, 18px, 27px);
-            color: $color-dark;
+            color: $color-dark !important;
+            margin-left: -5px;
             padding: 7px;
         }
     }
 }
+
 
 // Product
 .product-explore {
@@ -67,6 +102,12 @@
         @include font-styles(400, 28px, 42px);
         color: $color-dark;
         margin-bottom: 42px;
+
+        @include breakpoints-down(sm) {
+            margin-top: 38px;
+            @include font-styles(400, 18px, 27px);
+            text-align: center;
+        }
     }
 
     .card {
@@ -95,6 +136,10 @@
         padding-right: 10px;
         margin-top: -10px;
         margin-bottom: 84px;
+
+        @include breakpoints-down(sm) {
+            margin-bottom: 30px;
+        }
     }
 
     .pagination .page-link {
@@ -107,61 +152,5 @@
     .pagination .page-link:focus {
         color: $color-blue;
         background-color: $color-light;
-    }
-}
-
-// single breakpoint
-@media (min-width: 768px) and (max-width: 991.98px) {
-    // Hero
-    .hero-explore {
-        background-size: 530px;
-        background-position: right (-103px) bottom;
-        margin-top: -90px;
-    }
-}
-
-// `md` applies to small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) {
-    // Hero
-    .hero-explore {
-        background-size: 362px;
-        background-position: right (-103px) bottom (-53px);
-
-        .right {
-            margin-top: 86px;
-
-            h1 {
-                @include font-styles(600, 62px, 94px);
-            }
-
-            p {
-                @include font-styles(400, 18px, 27px);
-            }
-        }
-
-        .left {
-            margin-top: 63px;
-
-            h1 {
-                @include font-styles(400, 24px, 36px);
-            }
-
-            p {
-                @include font-styles(400, 14px, 21px);
-            }
-        }
-    }
-
-    // Product
-    .product-explore {
-        h2 {
-            margin-top: 38px;
-            @include font-styles(400, 18px, 27px);
-            text-align: center;
-        }
-
-        .pagination .page-item {
-            margin-bottom: 30px;
-        }
     }
 }
