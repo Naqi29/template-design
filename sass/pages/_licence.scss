@@ -1,0 +1,55 @@
+// Content
+.content-licence {
+    background-color: $color-light;
+    padding-top: 75px;
+    padding-bottom: 144px;
+
+    .nav {
+
+        button {
+            @include font-styles(500, 14px, 21px);
+            border-radius: 10px;
+            color: $color-dark;
+            background-color: $color-light;
+            border-radius: 10px;
+        }
+
+        .active {
+            color: $color-light;
+            background-color: $color-dark;
+        }
+    }
+
+    .card {
+        background-color: $color-dark;
+        border-radius: $default-radius;
+
+        @include breakpoints-down(sm) {
+            margin-top: 35px;
+            margin-bottom: 62px;
+        }
+
+        img {
+            margin-top: 35px;
+            width: 114px;
+            height: 114px;
+        }
+
+        h5 {
+            @include font-styles(500, 14px, 21px);
+            color: $color-light;
+            margin-bottom: 9px;
+        }
+
+        p {
+            @include font-styles(400, 12px, 18px);
+            color: $color-gray;
+            margin-bottom: 15px;
+        }
+    }
+
+    .description {
+        @include font-styles(500, 14px, 21px);
+        color: $color-dark;
+    }
+}

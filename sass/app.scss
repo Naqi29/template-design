@@ -1,0 +1,18 @@
+// Globals
+@import 'variables';
+@import 'mixins';
+@import 'globals';
+
+// Layouts
+@import 'layouts/navbar';
+@import 'layouts/footer';
+
+// Components
+@import 'components/hero';
+
+// Pages
+@import 'pages/index';
+@import 'pages/explore';
+@import 'pages/product-detail';
+@import 'pages/licence';
+@import 'pages/team';

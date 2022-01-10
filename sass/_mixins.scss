@@ -1,0 +1,35 @@
+// Breakpoints
+$breakpoints-up: ('md': '768px',
+    'lg': '992px',
+    'xl': '1200px'
+);
+
+$breakpoints-down: ('sm': '767.98px',
+    'md': '991.98px',
+    'lg': '1199.98px'
+);
+
+@mixin font-styles($weight, $size, $space) {
+    font-family: 'Poppins', sans-serif;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $space;
+}
+
+@mixin breakpoints-up($width) {
+    @media (min-width: map-get($breakpoints-up, $width)) {
+        @content;
+    }
+}
+
+@mixin breakpoints-down($width) {
+    @media (max-width: map-get($breakpoints-down, $width)) {
+        @content;
+    }
+}
+
+@mixin breakpoints-between($min-width, $max-width) {
+    @media (min-width: map-get($breakpoints-up, $min-width)) and (max-width: map-get($breakpoints-down, $max-width)) {
+        @content;
+    }
+}
