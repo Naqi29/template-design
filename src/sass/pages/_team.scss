@@ -11,6 +11,11 @@
         .profile-picture {
             width: 165px;
             height: 178px;
+
+            @include breakpoints-down(sm) {
+                width: 105px;
+                height: 118px;
+            }
         }
 
         .card-title {
