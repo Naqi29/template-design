@@ -1,0 +1,220 @@
+// Hero
+.hero-index {
+    background-repeat: no-repeat;
+    background-position: right (-130px) bottom;
+    height: 673px;
+
+    @include breakpoints-between(md, md) {
+        background-size: 530px;
+        background-position: right (-103px) bottom;
+        margin-top: -90px;
+    }
+
+    @include breakpoints-down(sm) {
+        background-size: 362px;
+        background-position: right (-103px) bottom (-53px);
+        height: 493px;
+    }
+
+    .left {
+        margin-top: 200px;
+
+        @include breakpoints-down(sm) {
+            margin-top: 80px;
+        }
+
+        h1 {
+            @include font-styles(400, 36px, 54px);
+            color: $color-light;
+            padding-bottom: 10px;
+
+            @include breakpoints-down(sm) {
+                @include font-styles(400, 24px, 36px);
+            }
+        }
+
+        h1 span {
+            font-weight: 600;
+            color: $color-orange;
+        }
+
+        p {
+            @include font-styles(400, 18px, 27px);
+            color: $color-light;
+            padding-bottom: 30px;
+
+            @include breakpoints-down(sm) {
+                @include font-styles(400, 14px, 21px);
+            }
+        }
+
+        a {
+            border-radius: $default-radius;
+            background-color: $color-light;
+            @include font-styles(400, 18px, 27px);
+            color: $color-dark;
+
+            @include breakpoints-down(sm) {
+                @include font-styles(400, 14px, 21px);
+            }
+        }
+    }
+}
+
+// Sponsor
+.sponsor {
+    background-color: $color-light;
+    padding-top: 75px;
+    padding-bottom: 80px;
+    margin-bottom: -50px;
+}
+
+// Product
+.featured-template-index,
+.latest-template-index {
+    background-color: $color-light;
+    padding-top: 80px;
+    padding-bottom: 100px;
+
+    .row-top {
+        margin-bottom: 42px;
+
+        h2 {
+            @include font-styles(400, 28px, 42px);
+            color: $color-dark;
+
+            @include breakpoints-down(sm) {
+                @include font-styles(400, 18px, 27px);
+            }
+        }
+
+        a {
+            border-radius: $default-radius;
+            background-color: $color-dark;
+            @include font-styles(400, 18px, 27px);
+            color: $color-light;
+
+            @include breakpoints-down(sm) {
+                @include font-styles(400, 14px, 21px);
+            }
+        }
+    }
+
+    .card {
+        background-color: $color-light;
+        border-radius: $default-radius;
+
+        .category {
+            @include font-styles(300, 12px, 18px);
+            color: $color-gray;
+            margin-bottom: 5px;
+        }
+
+        .card-title {
+            @include font-styles(400, 18px, 27px);
+            color: $color-dark;
+            margin-bottom: 5px;
+
+            @include breakpoints-down(sm) {
+                @include font-styles(400, 14px, 21px);
+            }
+        }
+
+        .price {
+            @include font-styles(400, 14px, 21px);
+            color: $color-blue;
+
+            @include breakpoints-down(sm) {
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+.latest-template-index {
+    background-color: $color-dark;
+
+    .row-top {
+
+        h2 {
+            color: $color-light;
+        }
+
+        a {
+            background-color: $color-light;
+            color: $color-dark;
+        }
+    }
+
+    .card {
+        background-color: $color-dark;
+
+        .card-title {
+            color: $color-light;
+        }
+    }
+}
+
+// Search
+.search-index {
+    background-color: $color-light;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    h1 {
+        @include font-styles(500, 28px, 42px);
+        color: $color-dark;
+        margin-bottom: 3px;
+
+        @include breakpoints-down(sm) {
+            @include font-styles(400, 18px, 27px);
+        }
+    }
+
+    p,
+    & a {
+        @include font-styles(400, 18px, 27px);
+        color: $color-dark;
+        margin-bottom: 20px;
+
+        a {
+            font-weight: 500;
+        }
+
+        @include breakpoints-down(sm) {
+            @include font-styles(400, 14px, 21px);
+        }
+    }
+
+    form {
+        border: 1px solid $color-gray;
+        border-radius: $default-radius;
+        margin-bottom: 20px;
+
+        label {
+            border-radius: 10px 0 0 10px;
+            background-color: $color-light !important;
+            color: $color-dark;
+            padding: 13px;
+
+            @include breakpoints-down(sm) {
+                padding: 7px;
+            }
+        }
+
+        input {
+            border-radius: 0 10px 10px 0;
+            background-color: $color-light !important;
+            @include font-styles(400, 18px, 27px);
+            color: $color-dark !important;
+            margin-left: -7px;
+            padding: 13px;
+
+            @include breakpoints-down(sm) {
+                @include font-styles(400, 14px, 21px);
+                margin-left: -2px;
+                padding: 7px;
+            }
+        }
+    }
+}
