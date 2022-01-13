@@ -56,6 +56,114 @@ body {
   color: #ff9f43;
 }
 
+#login {
+  background-color: white;
+}
+
+.login-page {
+  position: relative;
+  height: 100vh;
+  display: flex;
+}
+.login-page .login-image {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+.login-page .login-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.login-page .login-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-linear-gradient(135deg, #222f3e 55%, #ff9f43);
+  z-index: 1;
+  mix-blend-mode: screen;
+}
+.login-page .login-form h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  color: #ff9f43;
+  margin-bottom: 5px;
+  border-bottom: 5px solid #222f3e;
+  display: inline-block;
+}
+@media (max-width: 991.98px) {
+  .login-page .login-form h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+  }
+}
+.login-page .login-form label,
+.login-page .login-form input,
+.login-page .login-form button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ff9f43;
+}
+@media (max-width: 991.98px) {
+  .login-page .login-form label,
+.login-page .login-form input,
+.login-page .login-form button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+.login-page .login-form input,
+.login-page .login-form button {
+  border: 1px solid #ff9f43;
+  border-radius: 10px;
+  padding: 7px;
+}
+.login-page .login-form input {
+  color: #222f3e;
+}
+.login-page .login-form button {
+  font-weight: 600;
+  border: none;
+  background-color: #222f3e;
+}
+.login-page .login-form a,
+.login-page .login-form p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ff9f43;
+}
+@media (max-width: 991.98px) {
+  .login-page .login-form a,
+.login-page .login-form p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+.login-page .login-form a,
+.login-page .login-form .copy-right {
+  color: #222f3e;
+}
+
 .hero {
   background-repeat: no-repeat;
   background-position: center;
@@ -824,6 +932,12 @@ body {
 .content-team .card .profile-picture {
   width: 165px;
   height: 178px;
+}
+@media (max-width: 767.98px) {
+  .content-team .card .profile-picture {
+    width: 105px;
+    height: 118px;
+  }
 }
 .content-team .card .card-title {
   font-family: "Poppins", sans-serif;
