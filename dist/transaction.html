@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!-- My Fonts -->
+  <link rel="stylesheet" href="font/fonts.css">
+
+  <!-- My CSS -->
+  <link rel="stylesheet" href="css/app.css">
+
+  <title>Transaction</title>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark">
+    <div class="container px-4 px-md-0">
+      <a class="navbar-brand" href="#">
+        <img src="img/logo/logo-1.png" width="35" alt="Qyftah" class="d-inline-block align-text-top pe-1"><span
+          class=" d-none d-sm-inline-block">yftah</span>
+      </a>
+      <button class="navbar-toggler shadow-none border-0 p-0" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="toggler-icon">
+          <i class="fas fa-bars"></i>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link me-md-4" href="index.html">Home</a>
+          <a class="nav-link active-link me-md-4" href="explore.html">Explore</a>
+          <a class="nav-link me-md-4" href="licence.html">Licence</a>
+          <a class="nav-link me-md-4" href="about.html">About</a>
+          <div class="dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="img/profile/blank-profile.jpg" alt="its me" class="rounded-circle">
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end text-center" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="user-profile.html">Profile settings</a></li>
+              <li><a class="dropdown-item" href="product-favorite.html">My favorite</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="index.html">Sign out</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Akhir Navbar -->
+
+  <!-- Hero -->
+  <section class="hero container-fluid" style="background-image: url(img/hero/hero_bg_3.png);">
+    <div class="container px-4 px-md-0">
+      <div class="row justify-content-md-center">
+        <div class="col-11 col-md-8 col-lg-6 col-xl-5 text-md-center">
+          <h1>Let's Confirm the <span>Payment</span></h1>
+          <p>Review the details below and confirm your purchase.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Akhir Hero -->
+
+  <!-- Content -->
+  <section class="transaction">
+    <div class="container px-4 px-md-0">
+      <div class="row justify-content-evenly">
+        <div class="col-11 col-md-6 col-xl-5 d-flex flex-column shadow px-4 left">
+          <p class="transaction-date text-center py-2">Mar 13, 2022</p>
+          <div class="card border-0 mt-auto">
+            <img src="img/product/preview/MySchool.jpg" class="card-img-top" alt="...">
+            <div class="card-body px-4">
+              <h5 class="card-title text-center">MySchool Template with Animation</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-11 col-md-5 col-xl-4 d-flex flex-column p-0 right">
+          <select class="form-select border-0 shadow py-2 mb-4 mb-md-2" aria-label="Default select example">
+            <option selected>Choose payment method</option>
+            <option value="1">Bank transfer (BCA)</option>
+            <option value="2">Alfamart</option>
+            <option value="3">Indomaret</option>
+          </select>
+          <i class="fas fa-coins mb-5 mx-auto m-md-auto"></i>
+          <table class="table mt-auto">
+            <tr>
+              <td class="thick">ORDER SUMMARY</td>
+            </tr>
+            <tr>
+              <td class="pt-lg-4">Order</td>
+              <td class="pt-lg-4 thick text-end"><span class="text-muted text-decoration-line-through">Rp 49.925</span>
+                &nbsp; Rp 0</td>
+            </tr>
+            <tr>
+              <td class="pt-lg-4">Tax</td>
+              <td class="pt-lg-4 thick text-end">Rp 0</td>
+            </tr>
+            <tr>
+              <td class="pt-lg-4">Total</td>
+              <td class="pt-lg-4 thick text-end">Rp 0</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col text-center">
+          <a href="" class="btn py-2 btn-confirm">Confirm</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Akhir Content -->
+
+  <!-- Footer -->
+  <section class="footer">
+    <div class="container px-4 px-md-0">
+      <div class="row">
+        <div class="col-11 col-md-5 col-lg-4">
+          <div class="brand pb-4">
+            <img src="img/logo/logo-1.png" width="35" alt="Qyftah"
+              class="d-inline-block align-text-top pe-1"><span>yftah</span>
+          </div>
+          <p>The only site that offer <span>premium template</span> with the best price you will ever seen, personal and
+            comercial use is up to you</p>
+        </div>
+        <div class="col-6 col-md-2 ms-auto ps-auto ps-md-5 pt-5 pt-md-0">
+          <p class="pb-2"><span>Explore</span></p>
+          <ul class="list-group">
+            <li class="list-group-item ps-0 py-1 border-0"><a href="index.html">Home</a></li>
+            <li class="list-group-item ps-0 py-1 border-0"><a href="explore.html">Explore</a></li>
+            <li class="list-group-item ps-0 py-1 border-0"><a href="index.html#latest-template-index">Latest</a></li>
+            <li class="list-group-item ps-0 py-1 border-0"><a href="index.html#featured-template-index">Featured</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-2 ps-auto ps-md-5 pt-5 pt-md-0">
+          <p class="pb-2"><span>Company</span></p>
+          <ul class="list-group">
+            <li class="list-group-item ps-0 py-1 border-0"><a href="licence.html">Licence</a></li>
+            <li class="list-group-item ps-0 py-1 border-0"><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-3 ps-auto ps-md-5 pt-5 pt-md-0">
+          <p class="pb-2"><span>Useful Links</span></p>
+          <ul class="list-group">
+            <li class="list-group-item ps-0 py-1 border-0"><a href="">Terms & Condition</a></li>
+            <li class="list-group-item ps-0 py-1 border-0"><a href="">Privacy & Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-11 col-md-5 pt-5 pt-md-3">
+          <p>&copy;2022 - Qyftah. All rights reserved</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Akhir Footer -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+
+  <!-- My Icons -->
+  <script src="icon/icons.js"></script>
+
+  <!-- My JS -->
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>

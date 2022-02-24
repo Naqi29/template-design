@@ -3,19 +3,69 @@
     .navbar-brand {
         @include font-styles(600, 24px, 27px);
         color: $color-light !important;
+        letter-spacing: 3px;
+    }
+
+    .toggler-icon {
+        color: $color-light;
+        font-size: 24px;
+
+        &.close-icon-active .fa-bars:before {
+            content: '\f00d';
+        }
     }
 
     .nav-link {
         @include font-styles(400, 18px, 27px);
         color: $color-light !important;
+        text-align: center;
 
         @include breakpoints-down(sm) {
-            text-align: center;
+            @include font-styles(400, 14px, 21px);
+        }
+
+        &.active-link {
+            font-weight: 600;
+            color: $color-orange !important;
+        }
+
+        &.login {
+            border: 1px dotted $color-light;
+            transition: $delay;
+        }
+
+        &.login:hover {
+            border: 1px dashed $color-light;
         }
     }
 
-    .active-link {
-        @include font-styles(600, 18px, 27px);
-        color: $color-orange !important;
+    .dropdown {
+
+        a img {
+            width: 32px;
+            height: 32px;
+            object-fit: cover;
+        }
+
+        .dropdown-menu {
+            color: $color-light;
+            background-color: $color-dark;
+            border-color: $color-light;
+
+            @include breakpoints-down(sm) {
+                width: 50%;
+                margin: auto;
+            }
+
+            .dropdown-item {
+                @include font-styles(400, 14px, 21px);
+                color: $color-light;
+                background-color: $color-dark;
+
+                &:hover {
+                    color: $color-orange;
+                }
+            }
+        }
     }
 }

@@ -11,7 +11,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!-- My Fonts -->
-    <link rel="stylesheet" href="font/css2.css">
+    <link rel="stylesheet" href="font/fonts.css">
 
     <!-- My CSS -->
     <link rel="stylesheet" href="css/app.css">
@@ -29,34 +29,38 @@
         <div class="col-md-6 position-relative login-form">
           <div class="row h-100 d-flex justify-content-center align-items-center">
             <div class="col-10 col-lg-9">
-              <h2 class="mb-3">Sign up</h2>
+              <h2 class="mb-4">Sign up</h2>
               <form>
-                <div class="mb-3">
-                  <label for="Username" class="form-label">Username</label>
-                  <input type="text" class="form-control shadow-none" id="Username">
+                <div class="mb-3 form-floating">
+                  <input type="text" class="form-control border-0 shadow-sm" id="floatingName" placeholder="Name" required>
+                  <label for="floatingName">Name</label>
                 </div>
-                <div class="mb-3">
-                  <label for="Email" class="form-label">Email</label>
-                  <input type="email" class="form-control shadow-none" id="Email" aria-describedby="emailHelp">
+                <div class="mb-3 form-floating">
+                  <input type="email" class="form-control border-0 shadow-sm" id="floatingEmail" placeholder="name@example.com" required>
+                  <label for="floatingEmail">Email</label>
                 </div>
-                <div class="mb-3">
-                  <label for="Password" class="form-label">Password</label>
-                  <input type="password" class="form-control shadow-none" id="Password">
+                <div class="mb-3 form-floating">
+                  <input type="password" class="form-control border-0 shadow-sm" id="floatingPassword1" placeholder="Password1" required>
+                  <label for="floatingPassword1">Password</label>
                 </div>
-                <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input shadow-none" id="Check">
-                  <label class="form-check-label" for="Check">I agree with the <a href="">Terms</a> and <a href="">Privacy</a> </label>
+                <div class="mb-3 form-floating">
+                  <input type="password" class="form-control border-0 shadow-sm" id="floatingPassword2" placeholder="Password2" required>
+                  <label for="floatingPassword2">Confirm password</label>
+                </div>
+                <div class="mb-4 form-check">
+                  <input type="checkbox" class="form-check-input border-0 shadow-sm" id="Check" required>
+                  <label class="form-check-label" for="Check">I agree with the <a href="">Terms</a> and <a href="">Privacy</a></label>
                 </div>            
                 <div class="mb-3 d-grid">
-                  <button type="submit" class="btn shadow-none">Sign up</button>
+                  <button type="submit" class="btn border-0">Sign up</button>
                 </div>
-                <div class="text-center">
+                <div class="mb-5 text-center">
                   <p>Already have an account? <a href="sign-in.html">Sign in</a></p>
                 </div>
               </form>
             </div>
           </div>
-          <p class="copy-right position-absolute  bottom-0 start-50 translate-middle-x w-100 text-center">&copy;2022 - Orlo. All rights reserved</p>
+          <p class="copy-right position-absolute  bottom-0 start-50 translate-middle-x w-100 text-center">&copy;2022 - Qyftah. All rights reserved</p>
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 #login {
-    background-color: white;
+    background-color: $color-light;
 }
 
 .login-page {
@@ -20,75 +20,124 @@
             height: 100%;
             object-fit: cover;
         }
-    }
 
-    .login-image::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: -webkit-linear-gradient(135deg, $color-dark 55%, $color-orange);
-        z-index: 1;
-        mix-blend-mode: screen;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: -webkit-linear-gradient(135deg, $color-dark 55%, $color-orange);
+            mix-blend-mode: screen;
+        }
     }
 
     .login-form {
+        @include font-styles(400, 18px, 27px);
+        color: $color-dark;
+
+        @include breakpoints-down(md) {
+            @include font-styles(400, 14px, 21px);
+        }
+
+        .invalid-login {
+            @include font-styles(400, 14px, 21px);
+            padding: 5px 45px;
+            color: $color-light;
+            background-color: $color-red;
+        }
+
         h2 {
             @include font-styles(600, 28px, 42px);
-            color: $color-orange;
-            margin-bottom: 5px;
-            border-bottom: 5px solid $color-dark;
+            color: $color-dark;
             display: inline-block;
 
             @include breakpoints-down(md) {
                 @include font-styles(600, 18px, 27px);
-                text-align: center;
+            }
+
+            &::after {
+                content: '';
+                display: block;
+                border-bottom: 3px solid $color-orange;
+                width: 50%;
+                margin: auto;
             }
         }
 
-        label,
-        input,
+        input.form-control,
+        select.form-select,
         button {
+            border-radius: $default-radius;
             @include font-styles(400, 18px, 27px);
-            color: $color-orange;
+            color: $color-dark;
 
             @include breakpoints-down(md) {
                 @include font-styles(400, 14px, 21px);
             }
         }
 
-        input,
-        button {
-            border: 1px solid $color-orange;
-            border-radius: $default-radius;
-            padding: 7px;
-        }
-
-        input {
-            color: $color-dark;
-        }
-
-        button {
-            font-weight: 600;
-            border: none;
+        input.form-check-input:checked {
             background-color: $color-dark;
         }
 
-        a,
-        p {
-            @include font-styles(400, 18px, 27px);
-            color: $color-orange;
+        button {
+            padding: 13px;
+            color: $color-light;
+            background-color: $color-dark;
 
-            @include breakpoints-down(md) {
-                @include font-styles(400, 14px, 21px);
+            &:hover,
+            &:focus {
+                border-color: $color-dark;
+                box-shadow: 0 0 0 0.2rem rgba($color: $color-dark, $alpha: 0.25);
             }
         }
 
         a,
         .copy-right {
-            color: $color-dark;
+            color: $color-orange;
+        }
+
+        // user-profile.html
+        .input-file-picture {
+            position: relative;
+            height: 150px;
+            width: 150px;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+
+            img {
+                position: absolute;
+                border: 1px solid rgba($color: $color-gray, $alpha: 0.1);
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+            }
+
+            input[type=file] {
+                position: absolute;
+                width: 60px;
+                bottom: 7%;
+                left: 67%;
+                border-color: rgba($color: $color-gray, $alpha: 0.1);
+
+                &::after {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    bottom: 0;
+                    left: 0;
+                    content: 'Edit';
+                    @include font-styles(400, 14px, 21px);
+                    color: $color-dark;
+                    background-color: #fff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
         }
     }
 }

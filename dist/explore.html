@@ -9,13 +9,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!-- My Fonts -->
-    <link rel="stylesheet" href="font/css2.css">
+    <link rel="stylesheet" href="font/fonts.css">
     
     <!-- My CSS -->
     <link rel="stylesheet" href="css/app.css">
-    
-    <!-- My Icons -->
-    <script src="https://kit.fontawesome.com/23dc10002c.js" crossorigin="anonymous"></script>
 
     <title>Explore Page</title>
   </head>
@@ -25,18 +22,20 @@
     <nav class="navbar navbar-expand-md navbar-dark">
       <div class="container px-4 px-md-0">
         <a class="navbar-brand" href="#">
-          <img src="img/logo/logo_mark.png" alt="Orlo" class="d-inline-block align-text-center">
-          <span class=" d-none d-sm-inline-block">Orlo</span>
+          <img src="img/logo/logo-1.png" width="35" alt="Qyftah" class="d-inline-block align-text-top pe-1"><span class=" d-none d-sm-inline-block">yftah</span>
         </a>
-        <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler shadow-none border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="toggler-icon">
+            <i class="fas fa-bars"></i>
+          </span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
-            <a class="nav-link me-4" href="index.html">Home</a>
-            <a class="nav-link active-link me-4" href="#">Explore</a>
-            <a class="nav-link me-4" href="licence.html">Licence</a>
-            <a class="nav-link me-4" href="team.html">Team</a>
+            <a class="nav-link me-md-4" href="index.html">Home</a>
+            <a class="nav-link active-link me-md-4" href="explore.html">Explore</a>
+            <a class="nav-link me-md-4" href="licence.html">Licence</a>
+            <a class="nav-link me-md-4" href="about.html">About</a>
+            <a class="nav-link login" href="sign-in.html">Sign in</a>
           </div>
         </div>
       </div>
@@ -54,7 +53,7 @@
           <div class="col-md-6 left">
             <h1>Search <span>Any Beautiful HTML Template</span> you like</h1>
             <p>We've provide our best to serve as many HTML Template as we could, so you can easily find and get what you need.</p>
-            <form class="d-flex shadow">
+            <form class="d-flex">
               <label for="search" class="btn shadow-none border-0"><i class="fas fa-search pt-1 ps-2"></i></label>
               <input id="search" class="form-control shadow-none border-0" type="search" placeholder="search here.." aria-label="Search" autocomplete="off">
             </form>
@@ -67,155 +66,270 @@
     <!-- Product -->
     <section class="product-explore">
       <div class="container px-4 px-md-0">
-        <div class="row"> 
+        <div class="row row-cols-1"> 
           <div class="col">
             <h2>All HTML Template</h2>
           </div>
+          <div class="col choose-category text-center text-md-start">
+            <a href="" class="btn  shadow-none">School</a>
+            <a href="" class="btn  shadow-none">Company Profile</a>
+            <a href="" class="btn  shadow-none">E-Commerse</a>
+            <a href="" class="btn  shadow-none">Real Estate</a>
+            <a href="" class="btn  shadow-none">Industrial</a>
+          </div>
         </div>
-        <div class="row row-cols-2 row-cols-lg-3 gx-3 gy-5">
+        <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-4 gx-3 gy-5">
           <div class="col">
-            <a href="product-detail.html" class="text-decoration-none">
-              <div class="card border-0">
-                <img src="img/product/list/pic.png" class="card-img-top" alt="...">
-                <div class="card-body ps-0">
-                  <p class="card-text category">Category</p>
-                  <h5 class="card-title">Title of the HTML must be here</h5>
-                  <p class="card-text price">Rp. 70.000</p>
+            <div class="card border-0 h-100">
+              <a href="products/MySchool.html" class="text-decoration-none">
+                <img src="img/product/preview/MySchool.jpg" class="card-img-top" alt="MySchool">
+              </a>
+              <div class="card-body px-0">
+                <div class="row gx-0 align-items-center">
+                  <div class="col-9">
+                    <p class="card-text category">School</p>
+                    <a href="products/MySchool.html" class="text-decoration-none">
+                      <h5 class="card-title">MySchool Template with Animation</h5>
+                    </a>
+                    <p class="card-text price"><span class="text-muted text-decoration-line-through">Rp 49.925</span> &nbsp; Free</p>
+                  </div>
+                  <div class="col-3 text-center">       
+                    <i class="fas fa-heart"></i>
+                  </div>
                 </div>
               </div>
-            </a>           
+            </div>         
           </div>
           <div class="col">
-            <a href="product-detail.html" class="text-decoration-none">
-              <div class="card border-0">
-                <img src="img/product/list/pic-1.png" class="card-img-top" alt="...">
-                <div class="card-body ps-0">
-                  <p class="card-text category">Category</p>
-                  <h5 class="card-title">Title of the HTML must be here</h5>
-                  <p class="card-text price">Rp. 70.000</p>
-                </div>
-              </div> 
-            </a>         
-          </div>
-          <div class="col">
-            <a href="product-detail.html" class="text-decoration-none">
-              <div class="card border-0">
-                <img src="img/product/list/pic-2.png" class="card-img-top" alt="...">
-                <div class="card-body ps-0">
-                  <p class="card-text category">Category</p>
-                  <h5 class="card-title">Title of the HTML must be here</h5>
-                  <p class="card-text price">Rp. 70.000</p>
+            <div class="card border-0 h-100">
+              <a href="#" class="text-decoration-none">
+                <img src="img/product/preview/pic-1.png" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body px-0">
+                <div class="row gx-0 align-items-center">
+                  <div class="col-9">
+                    <p class="card-text category">Category</p>
+                    <a href="#" class="text-decoration-none">
+                      <h5 class="card-title">Title of the HTML must be here</h5>
+                    </a>
+                    <p class="card-text price">Price</p>
+                  </div>
+                  <div class="col-3 text-center">       
+                    <i class="fas fa-heart"></i>
+                  </div>
                 </div>
               </div>
-            </a>          
+            </div> 
+          </div>
+          <div class="col">
+            <div class="card border-0 h-100">
+              <a href="#" class="text-decoration-none">
+                <img src="img/product/preview/pic-2.png" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body px-0">
+                <div class="row gx-0 align-items-center">
+                  <div class="col-9">
+                    <p class="card-text category">Category</p>
+                    <a href="#" class="text-decoration-none">
+                      <h5 class="card-title">Title of the HTML must be here</h5>
+                    </a>
+                    <p class="card-text price">Price</p>
+                  </div>
+                  <div class="col-3 text-center">       
+                    <i class="fas fa-heart"></i>
+                  </div>
+                </div>
+              </div>
+            </div> 
           </div>      
           <div class="col">
-            <a href="product-detail.html" class="text-decoration-none">
-              <div class="card border-0">
-                <img src="img/product/list/pic-3.png" class="card-img-top" alt="...">
-                <div class="card-body ps-0">
-                  <p class="card-text category">Category</p>
-                  <h5 class="card-title">Title of the HTML must be here</h5>
-                  <p class="card-text price">Rp. 70.000</p>
+            <div class="card border-0 h-100">
+              <a href="#" class="text-decoration-none">
+                <img src="img/product/preview/pic-3.png" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body px-0">
+                <div class="row gx-0 align-items-center">
+                  <div class="col-9">
+                    <p class="card-text category">Category</p>
+                    <a href="#" class="text-decoration-none">
+                      <h5 class="card-title">Title of the HTML must be here</h5>
+                    </a>
+                    <p class="card-text price">Price</p>
+                  </div>
+                  <div class="col-3 text-center">       
+                    <i class="fas fa-heart"></i>
+                  </div>
                 </div>
               </div>
-            </a>          
+            </div> 
           </div>
           <div class="col">
-            <a href="product-detail.html" class="text-decoration-none">
-              <div class="card border-0">
-                <img src="img/product/list/pic-4.png" class="card-img-top" alt="...">
-                <div class="card-body ps-0">
-                  <p class="card-text category">Category</p>
-                  <h5 class="card-title">Title of the HTML must be here</h5>
-                  <p class="card-text price">Rp. 70.000</p>
+            <div class="card border-0 h-100">
+              <a href="#" class="text-decoration-none">
+                <img src="img/product/preview/pic-4.png" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body px-0">
+                <div class="row gx-0 align-items-center">
+                  <div class="col-9">
+                    <p class="card-text category">Category</p>
+                    <a href="#" class="text-decoration-none">
+                      <h5 class="card-title">Title of the HTML must be here</h5>
+                    </a>
+                    <p class="card-text price">Price</p>
+                  </div>
+                  <div class="col-3 text-center">       
+                    <i class="fas fa-heart"></i>
+                  </div>
                 </div>
               </div>
-            </a>          
+            </div> 
           </div>
           <div class="col">
-            <a href="product-detail.html" class="text-decoration-none">
-              <div class="card border-0">
-                <img src="img/product/list/pic-5.png" class="card-img-top" alt="...">
-                <div class="card-body ps-0">
-                  <p class="card-text category">Category</p>
-                  <h5 class="card-title">Title of the HTML must be here</h5>
-                  <p class="card-text price">Rp. 70.000</p>
+            <div class="card border-0 h-100">
+              <a href="#" class="text-decoration-none">
+                <img src="img/product/preview/pic-5.png" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body px-0">
+                <div class="row gx-0 align-items-center">
+                  <div class="col-9">
+                    <p class="card-text category">Category</p>
+                    <a href="#" class="text-decoration-none">
+                      <h5 class="card-title">Title of the HTML must be here</h5>
+                    </a>
+                    <p class="card-text price">Price</p>
+                  </div>
+                  <div class="col-3 text-center">       
+                    <i class="fas fa-heart"></i>
+                  </div>
                 </div>
               </div>
-            </a>          
+            </div>
           </div>
           <div class="col">
-            <a href="product-detail.html" class="text-decoration-none">
-              <div class="card border-0">
-                <img src="img/product/list/pic.png" class="card-img-top" alt="...">
-                <div class="card-body ps-0">
-                  <p class="card-text category">Category</p>
-                  <h5 class="card-title">Title of the HTML must be here</h5>
-                  <p class="card-text price">Rp. 70.000</p>
+            <div class="card border-0 h-100">
+              <a href="#" class="text-decoration-none">
+                <img src="img/product/preview/pic-1.png" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body px-0">
+                <div class="row gx-0 align-items-center">
+                  <div class="col-9">
+                    <p class="card-text category">Category</p>
+                    <a href="#" class="text-decoration-none">
+                      <h5 class="card-title">Title of the HTML must be here</h5>
+                    </a>
+                    <p class="card-text price">Price</p>
+                  </div>
+                  <div class="col-3 text-center">       
+                    <i class="fas fa-heart"></i>
+                  </div>
                 </div>
               </div>
-            </a>           
+            </div> 
           </div>
           <div class="col">
-            <a href="product-detail.html" class="text-decoration-none">
-              <div class="card border-0">
-                <img src="img/product/list/pic-1.png" class="card-img-top" alt="...">
-                <div class="card-body ps-0">
-                  <p class="card-text category">Category</p>
-                  <h5 class="card-title">Title of the HTML must be here</h5>
-                  <p class="card-text price">Rp. 70.000</p>
-                </div>
-              </div> 
-            </a>         
-          </div>
-          <div class="col">
-            <a href="product-detail.html" class="text-decoration-none">
-              <div class="card border-0">
-                <img src="img/product/list/pic-2.png" class="card-img-top" alt="...">
-                <div class="card-body ps-0">
-                  <p class="card-text category">Category</p>
-                  <h5 class="card-title">Title of the HTML must be here</h5>
-                  <p class="card-text price">Rp. 70.000</p>
+            <div class="card border-0 h-100">
+              <a href="#" class="text-decoration-none">
+                <img src="img/product/preview/pic-2.png" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body px-0">
+                <div class="row gx-0 align-items-center">
+                  <div class="col-9">
+                    <p class="card-text category">Category</p>
+                    <a href="#" class="text-decoration-none">
+                      <h5 class="card-title">Title of the HTML must be here</h5>
+                    </a>
+                    <p class="card-text price">Price</p>
+                  </div>
+                  <div class="col-3 text-center">       
+                    <i class="fas fa-heart"></i>
+                  </div>
                 </div>
               </div>
-            </a>          
+            </div> 
           </div>      
           <div class="col">
-            <a href="product-detail.html" class="text-decoration-none">
-              <div class="card border-0">
-                <img src="img/product/list/pic-3.png" class="card-img-top" alt="...">
-                <div class="card-body ps-0">
-                  <p class="card-text category">Category</p>
-                  <h5 class="card-title">Title of the HTML must be here</h5>
-                  <p class="card-text price">Rp. 70.000</p>
+            <div class="card border-0 h-100">
+              <a href="#" class="text-decoration-none">
+                <img src="img/product/preview/pic-3.png" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body px-0">
+                <div class="row gx-0 align-items-center">
+                  <div class="col-9">
+                    <p class="card-text category">Category</p>
+                    <a href="#" class="text-decoration-none">
+                      <h5 class="card-title">Title of the HTML must be here</h5>
+                    </a>
+                    <p class="card-text price">Price</p>
+                  </div>
+                  <div class="col-3 text-center">       
+                    <i class="fas fa-heart"></i>
+                  </div>
                 </div>
               </div>
-            </a>          
+            </div> 
           </div>
           <div class="col">
-            <a href="product-detail.html" class="text-decoration-none">
-              <div class="card border-0">
-                <img src="img/product/list/pic-4.png" class="card-img-top" alt="...">
-                <div class="card-body ps-0">
-                  <p class="card-text category">Category</p>
-                  <h5 class="card-title">Title of the HTML must be here</h5>
-                  <p class="card-text price">Rp. 70.000</p>
+            <div class="card border-0 h-100">
+              <a href="#" class="text-decoration-none">
+                <img src="img/product/preview/pic-4.png" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body px-0">
+                <div class="row gx-0 align-items-center">
+                  <div class="col-9">
+                    <p class="card-text category">Category</p>
+                    <a href="#" class="text-decoration-none">
+                      <h5 class="card-title">Title of the HTML must be here</h5>
+                    </a>
+                    <p class="card-text price">Price</p>
+                  </div>
+                  <div class="col-3 text-center">       
+                    <i class="fas fa-heart"></i>
+                  </div>
                 </div>
               </div>
-            </a>          
+            </div> 
           </div>
           <div class="col">
-            <a href="product-detail.html" class="text-decoration-none">
-              <div class="card border-0">
-                <img src="img/product/list/pic-5.png" class="card-img-top" alt="...">
-                <div class="card-body ps-0">
-                  <p class="card-text category">Category</p>
-                  <h5 class="card-title">Title of the HTML must be here</h5>
-                  <p class="card-text price">Rp. 70.000</p>
+            <div class="card border-0 h-100">
+              <a href="#" class="text-decoration-none">
+                <img src="img/product/preview/pic-5.png" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body px-0">
+                <div class="row gx-0 align-items-center">
+                  <div class="col-9">
+                    <p class="card-text category">Category</p>
+                    <a href="#" class="text-decoration-none">
+                      <h5 class="card-title">Title of the HTML must be here</h5>
+                    </a>
+                    <p class="card-text price">Price</p>
+                  </div>
+                  <div class="col-3 text-center">       
+                    <i class="fas fa-heart"></i>
+                  </div>
                 </div>
               </div>
-            </a>          
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 h-100">
+              <a href="#" class="text-decoration-none">
+                <img src="img/product/preview/pic-1.png" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body px-0">
+                <div class="row gx-0 align-items-center">
+                  <div class="col-9">
+                    <p class="card-text category">Category</p>
+                    <a href="#" class="text-decoration-none">
+                      <h5 class="card-title">Title of the HTML must be here</h5>
+                    </a>
+                    <p class="card-text price">Price</p>
+                  </div>
+                  <div class="col-3 text-center">       
+                    <i class="fas fa-heart"></i>
+                  </div>
+                </div>
+              </div>
+            </div> 
           </div>
         </div>
         <div class="row">
@@ -248,35 +362,36 @@
       <div class="container px-4 px-md-0">
         <div class="row">
           <div class="col-11 col-md-5 col-lg-4">
-            <img class="pb-4" src="img/logo/logo_text.png" alt="Orlo">
+            <div class="brand pb-4">
+              <img src="img/logo/logo-1.png" width="35" alt="Qyftah" class="d-inline-block align-text-top pe-1"><span>yftah</span>
+            </div>
             <p>The only site that offer <span>premium template</span> with the best price you will ever seen, personal and comercial use is up to you</p>       
           </div>
           <div class="col-6 col-md-2 ms-auto ps-auto ps-md-5 pt-5 pt-md-0">
             <p class="pb-2"><span>Explore</span></p>
             <ul class="list-group">
-              <li class="list-group-item ps-0 py-1 border-0"><a href="">Home</a></li>
-              <li class="list-group-item ps-0 py-1 border-0"><a href="">Explore</a></li>
-              <li class="list-group-item ps-0 py-1 border-0"><a href="">Latest</a></li>
-              <li class="list-group-item ps-0 py-1 border-0"><a href="">Featured</a></li>
+              <li class="list-group-item ps-0 py-1 border-0"><a href="index.html">Home</a></li>
+              <li class="list-group-item ps-0 py-1 border-0"><a href="explore.html">Explore</a></li>
+              <li class="list-group-item ps-0 py-1 border-0"><a href="index.html#latest-template-index">Latest</a></li>
+              <li class="list-group-item ps-0 py-1 border-0"><a href="index.html#featured-template-index">Featured</a></li>
             </ul>
           </div>
           <div class="col-6 col-md-2 ps-auto ps-md-5 pt-5 pt-md-0">
             <p class="pb-2"><span>Company</span></p>
             <ul class="list-group">
-              <li class="list-group-item ps-0 py-1 border-0"><a href="">About</a></li>
-              <li class="list-group-item ps-0 py-1 border-0"><a href="">Team</a></li>
+              <li class="list-group-item ps-0 py-1 border-0"><a href="licence.html">Licence</a></li>
+              <li class="list-group-item ps-0 py-1 border-0"><a href="about.html">About</a></li>
             </ul>
           </div>
           <div class="col-12 col-md-3 ps-auto ps-md-5 pt-5 pt-md-0">
             <p class="pb-2"><span>Useful Links</span></p>
             <ul class="list-group">
-              <li class="list-group-item ps-0 py-1 border-0"><a href="">Licence</a></li>
               <li class="list-group-item ps-0 py-1 border-0"><a href="">Terms & Condition</a></li>
               <li class="list-group-item ps-0 py-1 border-0"><a href="">Privacy & Policy</a></li>
             </ul>
           </div>
           <div class="col-11 col-md-5 pt-5 pt-md-3">
-            <p>&copy;2021 - Orlo. All rights reserved</p>
+            <p>&copy;2022 - Qyftah. All rights reserved</p>
           </div>
         </div>
       </div> 
@@ -285,6 +400,12 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+ 
+    <!-- My Icons -->
+    <script src="icon/icons.js"></script>
+    
+    <!-- My JS -->
+    <script src="js/app.js"></script>
 
   </body>
 </html>

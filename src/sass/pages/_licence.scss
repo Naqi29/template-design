@@ -8,15 +8,14 @@
 
         button {
             @include font-styles(500, 14px, 21px);
-            border-radius: 10px;
             color: $color-dark;
             background-color: $color-light;
-            border-radius: 10px;
-        }
+            border-radius: $default-radius;
 
-        .active {
-            color: $color-light;
-            background-color: $color-dark;
+            &.active {
+                color: $color-light;
+                background-color: $color-dark;
+            }
         }
     }
 

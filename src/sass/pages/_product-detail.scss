@@ -7,34 +7,48 @@
     .left {
         #image {
             position: relative;
-            margin-bottom: 60px;
+            margin-bottom: 50px;
 
-            a img {
-                border-radius: 23px;
-            }
-
-            span {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                border-radius: 23px;
-                background-color: rgba($color: $color-dark, $alpha: 0.5);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                opacity: 0;
-                transition: $delay;
-
+            .product-preview {
                 img {
-                    height: 59px;
-                    width: 59px;
+                    border-radius: 23px;
+                    width: 100%;
+                    height: auto;
                 }
-            }
 
-            a:hover span {
-                opacity: 1;
+                span {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 23px;
+                    background-color: rgba($color: $color-dark, $alpha: 0.5);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    opacity: 0;
+                    transition: $delay;
+
+                    a.fa-search {
+                        font-size: 16px;
+                        transform: rotateY(180deg);
+                        padding: 14px;
+                        color: $color-light;
+                        background-color: transparent;
+                        border: 1px solid $color-light;
+                        border-radius: 50%;
+
+                        &:hover {
+                            color: $color-orange;
+                            border: 1px solid $color-orange;
+                        }
+                    }
+                }
+
+                &:hover span {
+                    opacity: 1;
+                }
             }
 
             // overlay
@@ -51,18 +65,20 @@
                 opacity: 0;
                 transition: $delay;
 
-                .btn-close {
+                a.fa-times {
                     position: absolute;
-                    padding: 15px;
-                    top: 0;
-                    right: 0;
-                    background-color: $color-light;
-                    border-radius: 0;
-                    box-shadow: -2px 2px 2px $color-dark;
+                    top: 5px;
+                    right: 15px;
+                    font-size: 16px;
+                    padding: 8px 10px;
+                    color: $color-light;
+                    background-color: transparent;
+                    border: 1px solid $color-light;
+                    border-radius: 50%;
                 }
 
                 img {
-                    padding: 35px;
+                    padding: 44px 0;
                 }
 
                 &:target {
@@ -79,10 +95,6 @@
         ul {
             @include font-styles(500, 14px, 21px);
             color: $color-dark;
-
-            @include breakpoints-down(sm) {
-                margin-bottom: 80px;
-            }
         }
     }
 
@@ -100,7 +112,23 @@
             margin-bottom: 29px;
         }
 
-        .btn-buy {
+        i {
+            font-size: 14px;
+            color: $color-gray;
+            cursor: pointer;
+            padding: 10px 9.5px 9px 9.5px;
+            background-color: transparent;
+            border: 1px solid $color-gray;
+            border-radius: 50%;
+
+            &.favorite {
+                color: $color-red;
+                border: 1px solid $color-red;
+            }
+        }
+
+        .btn-buy,
+        .btn-full-view {
             margin-bottom: 13px;
 
             a {
@@ -110,20 +138,19 @@
                 padding: 13px;
                 @include font-styles(500, 14px, 21px);
                 color: $color-light;
+
+                &:hover {
+                    border-color: $color-dark;
+                    box-shadow: 0 0 0 0.2rem rgba($color: $color-dark, $alpha: 0.25);
+                }
             }
         }
 
-        .btn-preview {
+        .btn-full-view a {
+            border: 1px solid $color-gray;
+            background-color: $color-light;
+            color: $color-dark;
 
-            a {
-                border: 1px solid $color-gray;
-                background-color: $color-light;
-                border-radius: $default-radius;
-                width: 100%;
-                padding: 13px;
-                @include font-styles(400, 14px, 21px);
-                color: $color-dark;
-            }
         }
 
         .card {
@@ -131,39 +158,38 @@
             border-radius: $default-radius;
             padding-top: 33px;
             padding-bottom: 20px;
-            margin-top: 62px;
+            margin-top: 40px;
+            @include font-styles(400, 12px, 18px);
 
             table {
                 background-color: $color-dark;
                 border-radius: $default-radius;
-                @include font-styles(600, 12px, 18px);
                 color: $color-light;
 
-                .thin {
-                    font-weight: 400;
+                .thick {
+                    font-weight: 600;
                 }
             }
 
             img {
                 width: 114px;
                 height: 114px;
+                object-fit: cover;
             }
 
             h5 {
                 @include font-styles(500, 14px, 21px);
-                color: $color-light;
-                margin-bottom: 9px;
             }
 
-            p,
-            a {
-                @include font-styles(400, 12px, 18px);
+            p {
                 color: $color-gray;
-                margin-bottom: 9px;
+                margin-bottom: 10px;
             }
 
+            h5,
             a {
                 color: $color-light;
+                margin-bottom: 10px;
             }
         }
     }

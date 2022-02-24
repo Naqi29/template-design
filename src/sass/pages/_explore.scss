@@ -16,16 +16,16 @@
     }
 
     .right {
-        margin-top: 234px;
+        padding-top: 234px;
 
         @include breakpoints-down(sm) {
-            margin-top: 80px;
+            padding-top: 80px;
         }
 
         h1 {
             @include font-styles(600, 96px, 144px);
             background: -webkit-linear-gradient(-225.99deg, $color-orange 33.36%, $color-light 62.7%);
-            -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
 
             @include breakpoints-down(sm) {
@@ -45,16 +45,16 @@
     }
 
     .left {
-        margin-top: 200px;
+        padding-top: 200px;
 
         @include breakpoints-down(sm) {
-            margin-top: 57px;
+            padding-top: 57px;
         }
 
         h1 {
             @include font-styles(400, 36px, 54px);
             color: $color-light;
-            padding-bottom: 10px;
+            margin-bottom: 20px;
 
             @include breakpoints-down(sm) {
                 @include font-styles(400, 24px, 36px);
@@ -69,7 +69,7 @@
         p {
             @include font-styles(400, 18px, 27px);
             color: $color-light;
-            padding-bottom: 30px;
+            margin-bottom: 35px;
 
             @include breakpoints-down(sm) {
                 @include font-styles(400, 14px, 21px);
@@ -84,10 +84,6 @@
                 background-color: $color-light !important;
                 color: $color-dark;
                 padding: 13px;
-
-                @include breakpoints-down(sm) {
-                    padding: 7px;
-                }
             }
 
             input {
@@ -100,8 +96,16 @@
 
                 @include breakpoints-down(sm) {
                     @include font-styles(400, 14px, 21px);
-                    margin-left: -2px;
-                    padding: 7px;
+                }
+
+                &::-webkit-search-cancel-button {
+                    appearance: none;
+                    height: 12px;
+                    width: 12px;
+                    background-color: $color-dark;
+                    clip-path: polygon(18% 0%, 0% 18%, 33% 50%, 0% 83%, 18% 100%, 50% 68%, 83% 100%, 100% 83%, 68% 50%, 100% 18%, 83% 0%, 50% 33%);
+                    margin-right: 7px;
+                    margin-left: 10px;
                 }
             }
         }
@@ -118,7 +122,7 @@
     h2 {
         @include font-styles(400, 28px, 42px);
         color: $color-dark;
-        margin-bottom: 42px;
+        margin-bottom: 37px;
 
         @include breakpoints-down(sm) {
             @include font-styles(400, 18px, 27px);
@@ -126,9 +130,47 @@
         }
     }
 
+    .choose-category {
+        margin-bottom: 37px;
+
+        a {
+            @include font-styles(400, 14px, 21px);
+            color: $color-light;
+            background-color: $color-gray;
+            padding: 5px 10px;
+            border-radius: 20px;
+            margin-right: 9px;
+            margin-bottom: 9px;
+
+            @include breakpoints-down(sm) {
+                @include font-styles(300, 12px, 18px);
+            }
+
+            &:hover {
+                background-color: $color-dark;
+            }
+        }
+    }
+
     .card {
         background-color: $color-light;
         border-radius: $default-radius;
+
+        img {
+            border-radius: $default-radius;
+            padding: 1px;
+            background: -webkit-linear-gradient(135deg, $color-dark, $color-orange);
+            height: 160px;
+            object-fit: cover;
+
+            @include breakpoints-down(sm) {
+                height: 110px;
+            }
+
+            &:hover {
+                filter: brightness(0.8);
+            }
+        }
 
         .category {
             @include font-styles(300, 12px, 18px);
@@ -140,9 +182,17 @@
             @include font-styles(400, 18px, 27px);
             color: $color-dark;
             margin-bottom: 5px;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            display: -webkit-box;
+            overflow: hidden;
 
             @include breakpoints-down(sm) {
                 @include font-styles(400, 14px, 21px);
+            }
+
+            &:hover {
+                color: rgba($color: $color-dark, $alpha: 0.75);
             }
         }
 
@@ -151,20 +201,42 @@
             color: $color-blue;
 
             @include breakpoints-down(sm) {
-                font-weight: 300;
+                @include font-styles(300, 12px, 18px);
+            }
+        }
+
+        i {
+            font-size: 13px;
+            color: $color-gray;
+            cursor: pointer;
+            padding: 9px 8.5px 8px 8.5px;
+            background-color: transparent;
+            border: 1px solid $color-gray;
+            border-radius: 50%;
+
+            @include breakpoints-down(sm) {
+                font-size: 10px;
+                padding: 6px 5.5px 5px 5.5px;
+            }
+
+            &.favorite {
+                color: $color-red;
+                border: 1px solid $color-red;
             }
         }
     }
 
-    .pagination .page-link {
-        border-radius: $default-radius;
-        @include font-styles(400, 14px, 27px);
-        color: $color-dark;
-        background-color: $color-light;
-    }
+    .pagination {
+        .page-link {
+            border-radius: $default-radius;
+            @include font-styles(400, 14px, 27px);
+            color: $color-dark;
+            background-color: $color-light;
 
-    .pagination .page-link:focus {
-        color: $color-blue;
-        background-color: $color-light;
+            &:hover {
+                color: $color-blue;
+                background-color: $color-light;
+            }
+        }
     }
 }

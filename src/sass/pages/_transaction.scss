@@ -1,0 +1,103 @@
+// Content
+.transaction {
+    background-color: $color-light;
+    padding-top: 100px;
+    padding-bottom: 130px;
+
+    .left {
+        height: auto;
+        border-radius: $default-radius;
+
+        @include breakpoints-down(sm) {
+            margin-bottom: 30px;
+        }
+
+        .transaction-date {
+            @include font-styles(400, 18px, 27px);
+            color: $color-dark;
+
+            @include breakpoints-down(sm) {
+                @include font-styles(400, 14px, 21px);
+            }
+
+            &::after {
+                content: '';
+                display: block;
+                border-bottom: 1px solid $color-orange;
+                width: 90%;
+                margin: 7px auto;
+            }
+        }
+
+        .card {
+            background-color: $color-light;
+            border-radius: $default-radius;
+
+            img {
+                border-radius: $default-radius;
+                border: 1px solid rgba($color: $color-orange, $alpha: 0.25);
+            }
+
+            .card-title {
+                @include font-styles(400, 18px, 27px);
+                color: $color-dark;
+
+                @include breakpoints-down(sm) {
+                    @include font-styles(400, 14px, 21px);
+                }
+            }
+        }
+    }
+
+    .right {
+        height: auto;
+
+        select.form-select {
+            background-color: $color-light;
+            border-radius: 5px;
+            @include font-styles(400, 18px, 27px);
+            color: $color-dark;
+
+            @include breakpoints-down(sm) {
+                @include font-styles(400, 14px, 21px);
+            }
+        }
+
+        i.fa-coins {
+            font-size: 75px;
+            color: rgba($color: $color-orange, $alpha: 0.25);
+        }
+
+        table {
+            background-color: $color-light;
+            border-radius: $default-radius;
+            @include font-styles(400, 12px, 18px);
+            color: $color-dark;
+            border-bottom: 1px solid $color-orange;
+
+            .thick {
+                font-weight: 600;
+            }
+        }
+    }
+
+    .btn-confirm {
+        width: 150px;
+        margin-top: 70px;
+        background: linear-gradient(60deg, $color-light 0%, $color-orange 100%);
+        border-radius: $default-radius;
+        @include font-styles(600, 18px, 27px);
+        color: $color-dark;
+        border-color: $color-orange;
+
+        @include breakpoints-down(sm) {
+            margin-top: 50px;
+            @include font-styles(600, 14px, 21px);
+        }
+
+        &:hover,
+        &:focus {
+            box-shadow: 0 0 0 0.2rem rgba($color: $color-orange, $alpha: 0.25);
+        }
+    }
+}

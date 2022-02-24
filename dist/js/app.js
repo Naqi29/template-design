@@ -7,7 +7,25 @@
   \***********************/
 /***/ (() => {
 
+// Hamburger Menu
+var hbgrMenu = document.querySelector('.toggler-icon');
 
+hbgrMenu.onclick = function () {
+  hbgrMenu.classList.toggle('close-icon-active');
+}; // Icon "Favorite" in card of product
+
+
+var iconFav = document.querySelectorAll('.fa-heart');
+
+var _loop = function _loop(x) {
+  iconFav[x].onclick = function () {
+    iconFav[x].classList.toggle('favorite');
+  };
+};
+
+for (var x = 0; x < iconFav.length; x++) {
+  _loop(x);
+}
 
 /***/ }),
 

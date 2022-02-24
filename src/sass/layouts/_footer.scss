@@ -1,16 +1,25 @@
 .footer {
-    @include font-styles(300, 18px, 27px);
+    @include font-styles(400, 18px, 27px);
     color: $color-light;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    @include breakpoints-down(sm) {
+        @include font-styles(400, 14px, 21px);
+    }
+
+    .brand {
+        @include font-styles(600, 24px, 27px);
+        color: $color-light;
+        letter-spacing: 3px;
+    }
 
     p span {
-        font-weight: 500;
+        font-weight: 600;
     }
 
     ul li {
         background-color: $color-dark;
-        @include font-styles(300, 18px, 27px);
 
         a {
             text-decoration: none;

@@ -1,0 +1,125 @@
+// Content
+.content-team {
+    background-color: $color-light;
+    padding-top: 80px;
+    padding-bottom: 100px;
+
+    .story {
+        @include font-styles(500, 14px, 21px);
+        color: $color-dark;
+
+        span {
+            @include font-styles(800, 24px, 36px);
+            letter-spacing: 1.5px;
+            color: $color-dark;
+            margin-left: 2px;
+        }
+    }
+
+    .card {
+        background-color: $color-dark;
+        border-radius: $default-radius;
+
+        .box-picture {
+            position: relative;
+            height: 170px;
+            width: 170px;
+            overflow: hidden;
+
+            @include breakpoints-down(sm) {
+                height: 110px;
+                width: 110px;
+            }
+
+            .bg-picture {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 145px;
+                width: 170px;
+                background: $color-orange;
+
+
+                @include breakpoints-down(sm) {
+                    height: 92px;
+                    width: 110px;
+                }
+            }
+
+            img {
+                position: absolute;
+                bottom: -2%;
+                left: 0;
+                height: 170px;
+
+                @include breakpoints-down(sm) {
+                    height: 110px;
+                }
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 145px;
+                width: 170px;
+                background: transparent;
+                box-shadow: 0 50px 0 20px $color-dark;
+
+                @include breakpoints-down(sm) {
+                    height: 92px;
+                    width: 110px;
+                }
+            }
+
+            &.naqi::after,
+            .bg-picture.naqi {
+                border-radius: 60% 40% 60% 40% / 30% 70% 30% 70%;
+            }
+
+            &.liya::after,
+            .bg-picture.liya {
+                border-radius: 54% 83% 47% 74% / 41% 93% 38% 85%;
+            }
+
+            &.salman::after,
+            .bg-picture.salman {
+                border-radius: 75% 84% 36% 55% / 74% 75% 43% 52%;
+            }
+
+            &.tita::after,
+            .bg-picture.tita {
+                border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+            }
+        }
+
+        .card-body {
+
+            a {
+                text-decoration: none;
+                color: $color-light;
+                font-size: 20px;
+
+                @include breakpoints-down(sm) {
+                    font-size: 16px;
+                }
+            }
+
+            .card-title {
+                @include font-styles(600, 18px, 27px);
+                color: $color-light;
+                margin-bottom: 3px;
+
+                @include breakpoints-down(sm) {
+                    @include font-styles(600, 14px, 21px);
+                }
+            }
+
+            .category {
+                @include font-styles(300, 12px, 18px);
+                color: $color-gray;
+            }
+        }
+    }
+}
